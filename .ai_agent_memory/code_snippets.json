@@ -1,0 +1,17 @@
+{
+  "d86645a390cbf70b6d3b7b2f72dea571": {
+    "timestamp": "2025-08-16T23:48:31.076549",
+    "snippet": "def hello_world():\n    print('Hello, World!')",
+    "snippet_type": "function_definition",
+    "context": {
+      "language": "python"
+    },
+    "tags": [
+      "hello",
+      "function"
+    ],
+    "filepath": "test_file.py",
+    "usage_count": 0,
+    "hash": "d86645a390cbf70b6d3b7b2f72dea571"
+  }
+}

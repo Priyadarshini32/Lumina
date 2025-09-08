@@ -1,0 +1,1017 @@
+{
+  "read_file": {
+    "total_uses": 116,
+    "successful_uses": 116,
+    "failed_uses": 0,
+    "avg_execution_time": 0.016791555390718898,
+    "common_errors": {},
+    "usage_contexts": [
+      {
+        "timestamp": "2025-08-18T12:36:34.852731",
+        "context": {
+          "arguments": {
+            "filepath": "sample.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T12:40:06.305360",
+        "context": {
+          "arguments": {
+            "filepath": "sample.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T12:52:41.760265",
+        "context": {
+          "arguments": {
+            "filepath": "test.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T12:53:42.672881",
+        "context": {
+          "arguments": {
+            "filepath": "majority_element.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T12:54:19.301589",
+        "context": {
+          "arguments": {
+            "filepath": "sample.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T13:01:54.770175",
+        "context": {
+          "arguments": {
+            "filepath": "sample.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T14:45:51.344190",
+        "context": {
+          "arguments": {
+            "filepath": "sample.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T14:50:28.840334",
+        "context": {
+          "arguments": {
+            "filepath": "armstrong_checker.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T14:53:43.924445",
+        "context": {
+          "arguments": {
+            "filepath": "average_calculator.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T15:02:02.555613",
+        "context": {
+          "arguments": {
+            "filepath": "average_calculator.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T15:03:26.553345",
+        "context": {
+          "arguments": {
+            "filepath": "average_calculator.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T15:11:57.473921",
+        "context": {
+          "arguments": {
+            "filepath": "count_substrings.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T15:12:18.356001",
+        "context": {
+          "arguments": {
+            "filepath": "count_substrings.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T15:17:56.576894",
+        "context": {
+          "arguments": {
+            "filepath": "count_substrings.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T15:26:50.898846",
+        "context": {
+          "arguments": {
+            "filepath": "count_substrings.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T15:28:38.317342",
+        "context": {
+          "arguments": {
+            "filepath": "count_substrings.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T15:31:19.304966",
+        "context": {
+          "arguments": {
+            "filepath": "count_substrings.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-19T10:15:40.730403",
+        "context": {
+          "arguments": {
+            "filepath": "sample.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-19T10:16:28.726010",
+        "context": {
+          "arguments": {
+            "filepath": "palindrome_check.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-29T12:52:25.026748",
+        "context": {
+          "arguments": {
+            "filepath": "sample.py"
+          }
+        }
+      }
+    ],
+    "last_used": "2025-08-29T12:52:25.038713"
+  },
+  "write_file": {
+    "total_uses": 68,
+    "successful_uses": 66,
+    "failed_uses": 2,
+    "avg_execution_time": 0.00669803706213899,
+    "common_errors": {
+      "[Errno 22] Invalid argument": 2
+    },
+    "usage_contexts": [
+      {
+        "timestamp": "2025-08-18T12:24:49.692339",
+        "context": {
+          "arguments": {
+            "filepath": "sample.py",
+            "content": "def is_odd_or_even(number):\n    if number % 2 == 0:\n        return \"Even\"\n    else:\n        return \"Odd\"\n\n# Example usage\nnumber = 10\nresult = is_odd_or_even(number)\nprint(f\"{number} is {result}\")\n\nnumber = 7\nresult = is_odd_or_even(number)\nprint(f\"{number} is {result}\")"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T12:52:40.683610",
+        "context": {
+          "arguments": {
+            "filepath": "test.py",
+            "content": "def is_anagram(str1, str2):\n    \"\"\"Checks if two strings are anagrams of each other.\n\n    Args:\n        str1: The first string.\n        str2: The second string.\n\n    Returns:\n        True if the strings are anagrams, False otherwise.\n    \"\"\"\n    return sorted(str1.lower()) == sorted(str2.lower())\n\n# Example usage\nstring1 = \"listen\"\nstring2 = \"silent\"\n\nif is_anagram(string1, string2):\n    print(f\"'{string1}' and '{string2}' are anagrams.\")\nelse:\n    print(f\"'{string1}' and '{string2}' are not anagrams.\")"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T12:53:41.572302",
+        "context": {
+          "arguments": {
+            "filepath": "majority_element.py",
+            "content": "def majority_element(nums):\n    \"\"\"Finds the majority element in a list.\n\n    Args:\n        nums: A list of numbers.\n\n    Returns:\n        The majority element if it exists, otherwise None.\n    \"\"\"\n    counts = {}\n    for num in nums:\n        counts[num] = counts.get(num, 0) + 1\n\n    majority_threshold = len(nums) // 2\n    for num, count in counts.items():\n        if count > majority_threshold:\n            return num\n\n    return None\n\n#Example\nnums = [2, 2, 1, 1, 1, 2, 2]\nprint(majority_element(nums)) #Output: 2\nnums = [3,2,3]\nprint(majority_element(nums)) #Output: 3\nnums = [2,2,1,1,1,2,2,1,2,1]\nprint(majority_element(nums)) #Output: 1"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T14:50:26.371247",
+        "context": {
+          "arguments": {
+            "filepath": "armstrong_checker.py",
+            "content": "def is_armstrong(num):\n    num_str = str(num)\n    num_digits = len(num_str)\n    sum_of_powers = 0\n    for digit in num_str:\n        sum_of_powers += int(digit) ** num_digits\n    return sum_of_powers == num\n\n# Example usage (incorrect):\nnumber = 153\nif is_armstrong(number):\n    print(f\"{number} is an Armstrong number.\")\nelse:\n    print(f\"{number} is not an Armstrong number.\")"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T14:53:42.716591",
+        "context": {
+          "arguments": {
+            "filepath": "average_calculator.py",
+            "content": "def calculate_average(marks):\n    total = sum(marks)\n    #Incorrect logic: Dividing by a fixed number instead of number of subjects\n    average = total / 5\n    return average\n\nsubjects = [70, 80, 90, 60, 50]\naverage = calculate_average(subjects)\nprint(\"Average marks:\", average)"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T14:56:55.096298",
+        "context": {
+          "arguments": {
+            "filepath": "wrong_function_count.txt",
+            "content": "This file contains the substring 'wrong function count'."
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T15:02:01.489730",
+        "context": {
+          "arguments": {
+            "filepath": "average_calculator.py",
+            "content": "def calculate_average(subject1, subject2, subject3, subject4, subject5):\n    total = subject1 + subject2 + subject3 + subject4 + subject5\n    average = total / 5  # Incorrect: should handle potential division by zero\n    return average\n\n# Example usage with wrong logic (dividing by zero possible)\n# numbers = [10, 20, 30, 0, 50]\n# avg = calculate_average(*numbers)\n# print(avg)"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T15:11:34.681852",
+        "context": {
+          "arguments": {
+            "filepath": "count_substrings.py",
+            "content": "def count_substrings(string, substring):\n    count = 0\n    i = 0\n    while i < len(string):\n        if string[i:i + len(substring)] == substring:\n            count += 1\n            i += len(substring)\n        else:\n            i += 1\n    return count\n\n#This function is intentionally wrong, it only counts non-overlapping occurrences\n#Correct function would use string.count()"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T15:26:54.775524",
+        "context": {
+          "arguments": {
+            "filepath": "<same filepath>",
+            "content": "def count_substrings(string, substring):\n    return string.count(substring)\n\n#This function is intentionally wrong, it only counts non-overlapping occurrences\n#Correct function would use string.count()\n"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T15:28:42.283219",
+        "context": {
+          "arguments": {
+            "filepath": "the file",
+            "content": "def count_substrings(string, substring):\n    count = 0\n    i = 0\n    while i < len(string):\n        if string[i:i + len(substring)] == substring:\n            count += 1\n            i += len(substring)\n        else:\n            i += 1\n    return count\n\n#This function is intentionally wrong, it only counts non-overlapping occurrences\n#Correct function would use string.count()\n\ndef count_substrings_correct(string, substring):\n    return string.count(substring)"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T15:31:26.713270",
+        "context": {
+          "arguments": {
+            "filepath": "the file",
+            "content": "def count_substrings(string, substring):\n    return string.count(substring)\n\n#This function is intentionally wrong, it only counts non-overlapping occurrences\n#Correct function would use string.count()"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T15:32:42.311802",
+        "context": {
+          "arguments": {
+            "filepath": "majority_element.py",
+            "content": "def find_majority_element(nums):\n    \"\"\"Finds the majority element in a list that appears more than n/3 times.\n\n    Args:\n        nums: A list of numbers.\n\n    Returns:\n        The majority element if it exists, otherwise None.\n    \"\"\"\n    counts = {}\n    for num in nums:\n        counts[num] = counts.get(num, 0) + 1\n\n    n = len(nums)\n    for num, count in counts.items():\n        if count > n // 3:\n            return num\n\n    return None"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-19T10:15:10.926500",
+        "context": {
+          "arguments": {
+            "filepath": "sample.py",
+            "content": "def is_even(num):\n  \"\"\"Checks if a number is even.\n  Args:\n    num: An integer.\n  Returns:\n    True if the number is even, False otherwise.\n  \"\"\"\n  return num % 2 == 0\n\ndef is_odd(num):\n  \"\"\"Checks if a number is odd.\n  Args:\n    num: An integer.\n  Returns:\n    True if the number is odd, False otherwise.\n  \"\"\"\n  return num % 2 != 0\n\n# Get input from the user\nnumber = int(input(\"Enter an integer: \"))\n\n# Check if the number is even or odd\nif is_even(number):\n  print(f\"{number} is even\")\nelse:\n  print(f\"{number} is odd\")"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-19T10:15:48.110654",
+        "context": {
+          "arguments": {
+            "filepath": "the file",
+            "content": "def is_even(num):\n  \"\"\"Checks if a number is even.\n  Args:\n    num: An integer.\n  Returns:\n    True if the number is even, False otherwise.\n  \"\"\"\n  return num % 2 == 0\n\ndef is_odd(num):\n  \"\"\"Checks if a number is odd.\n  Args:\n    num: An integer.\n  Returns:\n    True if the number is odd, False otherwise.\n  \"\"\"\n  return num % 2 != 0\n\n# Get input from the user\nnumber = int(input(\"Enter an integer: \"))\n\n# Check if the number is even or odd\nif is_even(number):\n  print(f\"{number} is even\")\nelse:\n  print(f\"{number} is odd\")"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-19T10:16:14.664278",
+        "context": {
+          "arguments": {
+            "filepath": "palindrome_check.py",
+            "content": "def is_palindrome(text):\n  processed_text = ''.join(c for c in text.lower() if c.isalnum())\n  return processed_text == processed_text[::-1]\n\nword = input(\"Enter a word: \")\nif is_palindrome(word):\n  print(f\"{word} is a palindrome\")\nelse:\n  print(f\"{word} is not a palindrome\")"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-19T10:16:35.044793",
+        "context": {
+          "arguments": {
+            "filepath": "the file",
+            "content": "def is_palindrome(text):\n  processed_text = ''.join(c for c in text.lower() if c.isalnum())\n  return processed_text == processed_text[::-1]\n\nword = input(\"Enter a word: \")\nif is_palindrome(word):\n  print(f\"{word} is a palindrome\")\nelse:\n  print(f\"{word} is not a palindrome\")"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-29T12:50:08.358576",
+        "context": {
+          "arguments": {
+            "filepath": "sample.py",
+            "content": "def is_even_or_odd(number):\n    if number % 2 == 0:\n        return \"Even\"\n    else:\n        return \"Odd\"\n\n# Example usage\nnumber = 10\nresult = is_even_or_odd(number)\nprint(f\"{number} is {result}\")\n\nnumber = 7\nresult = is_even_or_odd(number)\nprint(f\"{number} is {result}\")"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-29T12:51:42.769728",
+        "context": {
+          "arguments": {
+            "filepath": "sample.py",
+            "content": "def is_palindrome(text):\n    processed_text = ''.join(c for c in text.lower() if c.isalnum())\n    return processed_text == processed_text[::-1]\n\n# Example usage:\nstring1 = \"A man, a plan, a canal: Panama\"\nstring2 = \"race a car\"\nstring3 = \"hello\"\n\nprint(f\"Is '{string1}' a palindrome? {is_palindrome(string1)}\")\nprint(f\"Is '{string2}' a palindrome? {is_palindrome(string2)}\")\nprint(f\"Is '{string3}' a palindrome? {is_palindrome(string3)}\")"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-30T10:49:25.742914",
+        "context": {
+          "arguments": {
+            "filepath": "test.py",
+            "content": "def is_palindrome(text):\n    processed_text = ''.join(c for c in text.lower() if c.isalnum())\n    return processed_text == processed_text[::-1]\n\n# Example usage\nstring1 = \"A man, a plan, a canal: Panama\"\nstring2 = \"race a car\"\nstring3 = \"hello\"\n\nprint(f\"'{string1}' is a palindrome: {is_palindrome(string1)}\")\nprint(f\"'{string2}' is a palindrome: {is_palindrome(string2)}\")\nprint(f\"'{string3}' is a palindrome: {is_palindrome(string3)}\")"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-09-06T19:29:49.623159",
+        "context": {
+          "arguments": {
+            "filepath": "odd_even_checker.py",
+            "content": "def is_odd_or_even(number):\n  \"\"\"Checks if a number is odd or even.\n\n  Args:\n    number: An integer.\n\n  Returns:\n    'Even' if the number is even, 'Odd' if the number is odd.\n  \"\"\"\n  if number % 2 == 0:\n    return 'Even'\n  else:\n    return 'Odd'\n\n# Example usage:\nnumber = 10\nresult = is_odd_or_even(number)\nprint(f\"{number} is {result}\")\n\nnumber = 7\nresult = is_odd_or_even(number)\nprint(f\"{number} is {result}\")"
+          }
+        }
+      }
+    ],
+    "last_used": "2025-09-06T19:29:49.631709"
+  },
+  "run_command": {
+    "total_uses": 6,
+    "successful_uses": 5,
+    "failed_uses": 1,
+    "avg_execution_time": 7.446651816368103,
+    "common_errors": {
+      "Command not found": 1
+    },
+    "usage_contexts": [
+      {
+        "timestamp": "2025-08-16T23:48:31.073911",
+        "context": {
+          "command": "invalid_cmd"
+        }
+      },
+      {
+        "timestamp": "2025-08-17T13:42:19.025204",
+        "context": {
+          "arguments": {
+            "command": "invalid_cmd"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T12:27:20.894494",
+        "context": {
+          "arguments": {
+            "command": "python sample.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T12:33:23.150816",
+        "context": {
+          "arguments": {
+            "command": "pip install pylint"
+          }
+        }
+      }
+    ],
+    "last_used": "2025-08-18T12:33:23.159296"
+  },
+  "get_memory_status": {
+    "total_uses": 7,
+    "successful_uses": 7,
+    "failed_uses": 0,
+    "avg_execution_time": 0.001260201136271159,
+    "common_errors": {},
+    "usage_contexts": [
+      {
+        "timestamp": "2025-08-17T13:40:15.469260",
+        "context": {
+          "arguments": {}
+        }
+      },
+      {
+        "timestamp": "2025-08-17T15:39:06.573440",
+        "context": {
+          "arguments": {}
+        }
+      },
+      {
+        "timestamp": "2025-08-17T16:30:45.487732",
+        "context": {
+          "arguments": {}
+        }
+      },
+      {
+        "timestamp": "2025-08-17T17:57:43.460256",
+        "context": {
+          "arguments": {}
+        }
+      }
+    ],
+    "last_used": "2025-08-17T17:57:43.470727"
+  },
+  "list_directory_contents": {
+    "total_uses": 47,
+    "successful_uses": 47,
+    "failed_uses": 0,
+    "avg_execution_time": 0.0009523589035560345,
+    "common_errors": {},
+    "usage_contexts": [
+      {
+        "timestamp": "2025-08-17T17:43:24.977689",
+        "context": {
+          "arguments": {}
+        }
+      },
+      {
+        "timestamp": "2025-08-17T17:51:01.433107",
+        "context": {
+          "arguments": {}
+        }
+      },
+      {
+        "timestamp": "2025-08-17T17:56:37.831569",
+        "context": {
+          "arguments": {}
+        }
+      },
+      {
+        "timestamp": "2025-08-17T18:01:40.013509",
+        "context": {
+          "arguments": {}
+        }
+      },
+      {
+        "timestamp": "2025-08-18T12:17:54.498567",
+        "context": {
+          "arguments": {}
+        }
+      },
+      {
+        "timestamp": "2025-08-18T12:30:21.534302",
+        "context": {
+          "arguments": {}
+        }
+      },
+      {
+        "timestamp": "2025-08-18T12:30:40.038932",
+        "context": {
+          "arguments": {}
+        }
+      },
+      {
+        "timestamp": "2025-08-18T12:40:04.972388",
+        "context": {
+          "arguments": {}
+        }
+      },
+      {
+        "timestamp": "2025-08-18T12:57:24.560216",
+        "context": {
+          "arguments": {}
+        }
+      },
+      {
+        "timestamp": "2025-08-18T13:02:03.221317",
+        "context": {
+          "arguments": {}
+        }
+      },
+      {
+        "timestamp": "2025-08-18T14:46:01.656984",
+        "context": {
+          "arguments": {}
+        }
+      },
+      {
+        "timestamp": "2025-08-18T15:03:25.567630",
+        "context": {
+          "arguments": {}
+        }
+      },
+      {
+        "timestamp": "2025-08-18T15:03:35.301858",
+        "context": {
+          "arguments": {}
+        }
+      },
+      {
+        "timestamp": "2025-08-18T15:12:06.012198",
+        "context": {
+          "arguments": {}
+        }
+      },
+      {
+        "timestamp": "2025-08-18T15:12:17.186104",
+        "context": {
+          "arguments": {}
+        }
+      },
+      {
+        "timestamp": "2025-08-18T15:12:23.820746",
+        "context": {
+          "arguments": {}
+        }
+      },
+      {
+        "timestamp": "2025-08-18T15:17:55.171258",
+        "context": {
+          "arguments": {}
+        }
+      },
+      {
+        "timestamp": "2025-08-18T15:18:00.006565",
+        "context": {
+          "arguments": {}
+        }
+      },
+      {
+        "timestamp": "2025-08-19T10:17:35.588612",
+        "context": {
+          "arguments": {}
+        }
+      },
+      {
+        "timestamp": "2025-09-06T19:27:55.273570",
+        "context": {
+          "arguments": {}
+        }
+      }
+    ],
+    "last_used": "2025-09-06T19:27:55.278811"
+  },
+  "search_memory_patterns": {
+    "total_uses": 1,
+    "successful_uses": 1,
+    "failed_uses": 0,
+    "avg_execution_time": 0,
+    "common_errors": {},
+    "usage_contexts": [
+      {
+        "timestamp": "2025-08-17T13:42:43.464776",
+        "context": {
+          "arguments": {
+            "pattern_type": "tool_effectiveness",
+            "query": "tool usage"
+          }
+        }
+      }
+    ],
+    "last_used": "2025-08-17T13:42:43.464776"
+  },
+  "unknown": {
+    "total_uses": 62,
+    "successful_uses": 62,
+    "failed_uses": 0,
+    "avg_execution_time": 0,
+    "common_errors": {},
+    "usage_contexts": [],
+    "last_used": "2025-08-17T17:43:31.414444"
+  },
+  "search_files": {
+    "total_uses": 26,
+    "successful_uses": 26,
+    "failed_uses": 0,
+    "avg_execution_time": 7.2499267137967625,
+    "common_errors": {},
+    "usage_contexts": [
+      {
+        "timestamp": "2025-08-17T15:54:54.023776",
+        "context": {
+          "arguments": {
+            "query": "package.json"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-17T16:07:12.368401",
+        "context": {
+          "arguments": {
+            "query": "package.json"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-17T16:09:27.555883",
+        "context": {
+          "arguments": {
+            "query": "package.json"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-17T16:16:58.582068",
+        "context": {
+          "arguments": {
+            "query": "package.json"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-17T16:21:52.271904",
+        "context": {
+          "arguments": {
+            "query": "package.json"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-17T16:36:47.863764",
+        "context": {
+          "arguments": {
+            "query": "requirements.txt"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-17T17:01:32.626539",
+        "context": {
+          "arguments": {
+            "query": "package.json"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-17T17:03:10.347854",
+        "context": {
+          "arguments": {
+            "query": "package.json"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-17T17:51:56.812345",
+        "context": {
+          "arguments": {
+            "query": ".txt",
+            "directory_path": "."
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-17T17:57:12.136161",
+        "context": {
+          "arguments": {
+            "query": ".gitignore"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T15:17:49.614711",
+        "context": {
+          "arguments": {
+            "query": "count_substrings",
+            "directory_path": "."
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T15:23:36.111894",
+        "context": {
+          "arguments": {
+            "query": "count_substrigs",
+            "directory_path": "."
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T15:26:49.564743",
+        "context": {
+          "arguments": {
+            "query": "count_substrings"
+          }
+        }
+      }
+    ],
+    "last_used": "2025-08-18T15:26:49.574541"
+  },
+  "clear_file_content": {
+    "total_uses": 10,
+    "successful_uses": 10,
+    "failed_uses": 0,
+    "avg_execution_time": 0.004168415069580078,
+    "common_errors": {},
+    "usage_contexts": [
+      {
+        "timestamp": "2025-08-17T15:56:35.069033",
+        "context": {
+          "arguments": {
+            "filepath": "hello.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-17T16:11:11.290288",
+        "context": {
+          "arguments": {
+            "filepath": "sample.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-17T16:11:41.848030",
+        "context": {
+          "arguments": {
+            "filepath": "sample.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-29T12:50:26.096359",
+        "context": {
+          "arguments": {
+            "filepath": "sample.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-30T10:49:40.353513",
+        "context": {
+          "arguments": {
+            "filepath": "test.py"
+          }
+        }
+      }
+    ],
+    "last_used": "2025-08-30T10:49:40.366273"
+  },
+  "delete_file": {
+    "total_uses": 8,
+    "successful_uses": 8,
+    "failed_uses": 0,
+    "avg_execution_time": 0.002792954444885254,
+    "common_errors": {},
+    "usage_contexts": [
+      {
+        "timestamp": "2025-08-17T15:56:53.055586",
+        "context": {
+          "arguments": {
+            "filepath": "hello.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-17T16:28:10.823278",
+        "context": {
+          "arguments": {
+            "filepath": "README.md"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-17T17:15:44.615675",
+        "context": {
+          "arguments": {
+            "filepath": "sample.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T14:53:07.913265",
+        "context": {
+          "arguments": {
+            "filepath": "armstrong_checker.py"
+          }
+        }
+      }
+    ],
+    "last_used": "2025-08-18T14:53:07.919284"
+  },
+  "undo_last_action": {
+    "total_uses": 6,
+    "successful_uses": 6,
+    "failed_uses": 0,
+    "avg_execution_time": 0.001478433609008789,
+    "common_errors": {},
+    "usage_contexts": [
+      {
+        "timestamp": "2025-08-17T16:11:53.121291",
+        "context": {
+          "arguments": {}
+        }
+      },
+      {
+        "timestamp": "2025-08-17T16:28:19.100794",
+        "context": {
+          "arguments": {}
+        }
+      },
+      {
+        "timestamp": "2025-08-17T18:03:12.725125",
+        "context": {
+          "arguments": {}
+        }
+      }
+    ],
+    "last_used": "2025-08-17T18:03:12.730286"
+  },
+  "run_git_command": {
+    "total_uses": 8,
+    "successful_uses": 8,
+    "failed_uses": 0,
+    "avg_execution_time": 0.14789605140686035,
+    "common_errors": {},
+    "usage_contexts": [
+      {
+        "timestamp": "2025-08-17T16:29:15.652318",
+        "context": {
+          "arguments": {
+            "command": "status"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-17T17:50:39.746686",
+        "context": {
+          "arguments": {
+            "command": "status"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-29T12:52:57.728702",
+        "context": {
+          "arguments": {
+            "command": "status"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-30T10:48:43.100552",
+        "context": {
+          "arguments": {
+            "command": "status"
+          }
+        }
+      }
+    ],
+    "last_used": "2025-08-30T10:48:43.124938"
+  },
+  "run_linter": {
+    "total_uses": 18,
+    "successful_uses": 18,
+    "failed_uses": 0,
+    "avg_execution_time": 1.0075727038913302,
+    "common_errors": {},
+    "usage_contexts": [
+      {
+        "timestamp": "2025-08-17T16:30:10.293087",
+        "context": {
+          "arguments": {
+            "filepath": "sample.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-17T17:50:02.812530",
+        "context": {
+          "arguments": {
+            "filepath": "test.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T12:26:48.080564",
+        "context": {
+          "arguments": {
+            "filepath": "sample.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T12:32:49.632745",
+        "context": {
+          "arguments": {
+            "filepath": "sample.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T12:33:25.745086",
+        "context": {
+          "arguments": {
+            "filepath": "sample.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T12:33:46.947710",
+        "context": {
+          "arguments": {
+            "filepath": "sample.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T12:36:37.797086",
+        "context": {
+          "arguments": {
+            "filepath": "sample.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T12:54:15.398491",
+        "context": {
+          "arguments": {
+            "filepath": "sample.py"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T12:54:38.056980",
+        "context": {
+          "arguments": {
+            "filepath": "sample.py"
+          }
+        }
+      }
+    ],
+    "last_used": "2025-08-18T12:54:38.067067"
+  },
+  "apply_code_change": {
+    "total_uses": 6,
+    "successful_uses": 6,
+    "failed_uses": 0,
+    "avg_execution_time": 0.002524256706237793,
+    "common_errors": {},
+    "usage_contexts": [
+      {
+        "timestamp": "2025-08-17T16:30:16.915195",
+        "context": {
+          "arguments": {
+            "filepath": "sample.py",
+            "old_code": "return x + y",
+            "new_code": "return x * y"
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-17T16:45:00.244833",
+        "context": {
+          "arguments": {
+            "filepath": "README.md",
+            "old_code": "# My Python Project\n\nThis project contains several Python files.  More details to be added later.\n\n**Files:**\n\n- `main.py`: Main program file (likely)\n- `sample.py`: Sample code or test file (likely)\n- `llm_integration.py`: File for integration with large language models (likely) \n- `README.md`: This file (description)\n",
+            "new_code": "# My Python Project\n\nThis project implements an AI coding agent that interacts with the user through a terminal interface.  The agent uses the Gemini-1.5-flash model from Google's Generative AI API to understand and respond to user requests.  It can perform a variety of actions, including reading, writing, deleting, and modifying files; executing Git commands; running shell commands; linting and testing Python code; and answering coding-related questions.\n\n**Key Features:**\n* **Iterative Approach:** The agent operates using a Perceive-Reason-Act-Learn loop, breaking down complex tasks into smaller steps.\n* **Tool Integration:**  The agent integrates several tools for file manipulation, Git operations, shell commands, code analysis, and more.\n* **Memory Management:** The agent maintains memory of its actions and the project's state.\n* **User Interface:** The `TerminalInterface` provides a simple text-based interaction.\n* **Undo Functionality:**  Provides `undo_last_action` capability for recovering from destructive actions.\n* **Help Functionality:** Users can type 'help' to get information about the agent's capabilities.\n* **Status and History:** Users can check the agent's status and see the conversation history using 'status' and 'history' commands.\n\n**File Summaries:**\n* **main.py:** The main entry point of the application. It initializes the agent and the terminal interface, handles user input, and manages the agent's lifecycle.\n* **llm_integration.py:** Contains the `LLMIntegration` class, which handles the interaction with Google's Generative AI API and the planning of actions.\n\nThis README provides a high-level overview.  For detailed information on specific functionalities, refer to the individual source code files."
+          }
+        }
+      },
+      {
+        "timestamp": "2025-08-18T13:02:09.170242",
+        "context": {
+          "arguments": {
+            "filepath": "sample.py",
+            "old_code": "return \"Odd\"",
+            "new_code": "return \"Even\""
+          }
+        }
+      }
+    ],
+    "last_used": "2025-08-18T13:02:09.178345"
+  },
+  "run_tests": {
+    "total_uses": 2,
+    "successful_uses": 2,
+    "failed_uses": 0,
+    "avg_execution_time": 0.9955692291259766,
+    "common_errors": {},
+    "usage_contexts": [
+      {
+        "timestamp": "2025-08-17T17:49:47.746556",
+        "context": {
+          "arguments": {
+            "directory_path": "."
+          }
+        }
+      }
+    ],
+    "last_used": "2025-08-17T17:49:47.749901"
+  }
+}

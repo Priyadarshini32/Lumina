@@ -1,0 +1,1492 @@
+{
+  "test_file.py": {
+    "access_count": 3,
+    "operations": [
+      {
+        "timestamp": "2025-08-16T23:48:31.069277",
+        "operation": "write",
+        "success": true,
+        "content_hash": "07da107bb575cc4e02b0e1d6d99cc204",
+        "file_size": 22
+      },
+      {
+        "timestamp": "2025-08-16T23:48:31.070303",
+        "operation": "write",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-16T23:48:31.071837",
+        "operation": "read",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      }
+    ],
+    "last_accessed": "2025-08-16T23:48:31.071837",
+    "file_type": ".py",
+    "content_hashes": [
+      "07da107bb575cc4e02b0e1d6d99cc204"
+    ]
+  },
+  "test_persistent.py": {
+    "access_count": 1,
+    "operations": [
+      {
+        "timestamp": "2025-08-16T23:48:31.161829",
+        "operation": "read",
+        "success": true,
+        "content_hash": "abc123",
+        "file_size": 100
+      }
+    ],
+    "last_accessed": "2025-08-16T23:48:31.161829",
+    "file_type": ".py",
+    "content_hashes": [
+      "abc123"
+    ]
+  },
+  "test_mem.txt": {
+    "access_count": 7,
+    "operations": [
+      {
+        "timestamp": "2025-08-17T00:23:02.780799",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T00:23:16.877490",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T00:23:16.878495",
+        "operation": "read",
+        "success": true,
+        "content_hash": "5eb63bbbe01eeed093cb22bb8f5acdc3",
+        "file_size": 11
+      },
+      {
+        "timestamp": "2025-08-17T00:24:13.041519",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T13:39:40.734384",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T13:40:01.954011",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T13:40:01.957085",
+        "operation": "read",
+        "success": true,
+        "content_hash": "5eb63bbbe01eeed093cb22bb8f5acdc3",
+        "file_size": 11
+      }
+    ],
+    "last_accessed": "2025-08-17T13:40:01.957085",
+    "file_type": ".txt",
+    "content_hashes": [
+      "5eb63bbbe01eeed093cb22bb8f5acdc3",
+      "5eb63bbbe01eeed093cb22bb8f5acdc3"
+    ]
+  },
+  "main.py": {
+    "access_count": 26,
+    "operations": [
+      {
+        "timestamp": "2025-08-17T13:46:11.722745",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T13:46:11.724736",
+        "operation": "read",
+        "success": true,
+        "content_hash": "52faa92e29d42c2d6b684ed762258020",
+        "file_size": 2002
+      },
+      {
+        "timestamp": "2025-08-17T13:54:17.103688",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T13:54:17.105670",
+        "operation": "read",
+        "success": true,
+        "content_hash": "52faa92e29d42c2d6b684ed762258020",
+        "file_size": 2002
+      },
+      {
+        "timestamp": "2025-08-17T14:04:58.433759",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T14:04:58.437983",
+        "operation": "read",
+        "success": true,
+        "content_hash": "52faa92e29d42c2d6b684ed762258020",
+        "file_size": 2002
+      },
+      {
+        "timestamp": "2025-08-17T14:07:15.955260",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T14:07:15.959250",
+        "operation": "read",
+        "success": true,
+        "content_hash": "52faa92e29d42c2d6b684ed762258020",
+        "file_size": 2002
+      },
+      {
+        "timestamp": "2025-08-17T14:08:27.159120",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T14:08:27.165903",
+        "operation": "read",
+        "success": true,
+        "content_hash": "52faa92e29d42c2d6b684ed762258020",
+        "file_size": 2002
+      },
+      {
+        "timestamp": "2025-08-17T15:36:58.249220",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T15:36:58.250332",
+        "operation": "read",
+        "success": true,
+        "content_hash": "52faa92e29d42c2d6b684ed762258020",
+        "file_size": 2002
+      },
+      {
+        "timestamp": "2025-08-17T15:55:26.487039",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T15:55:26.488179",
+        "operation": "read",
+        "success": true,
+        "content_hash": "4f425392fe8aa86fcb76347d7409dbe5",
+        "file_size": 4142
+      },
+      {
+        "timestamp": "2025-08-17T16:24:37.967934",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T16:24:37.969993",
+        "operation": "read",
+        "success": true,
+        "content_hash": "8e44f95d0a5191fd70fa9a566afc4f92",
+        "file_size": 4727
+      },
+      {
+        "timestamp": "2025-08-17T16:44:19.820397",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T16:44:19.822391",
+        "operation": "read",
+        "success": true,
+        "content_hash": "4690552fb2967edc1f36a06c3cc753c0",
+        "file_size": 4391
+      },
+      {
+        "timestamp": "2025-08-17T17:13:56.418674",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T17:13:56.419683",
+        "operation": "read",
+        "success": true,
+        "content_hash": "dfcf24df08aff16ef68e0fc48f84c30f",
+        "file_size": 4203
+      },
+      {
+        "timestamp": "2025-08-17T18:01:11.025977",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T18:01:11.027033",
+        "operation": "read",
+        "success": true,
+        "content_hash": "9f67f43ab649bb4ee52718b004a3d508",
+        "file_size": 4204
+      },
+      {
+        "timestamp": "2025-08-17T18:01:14.882117",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T18:01:14.883167",
+        "operation": "read",
+        "success": true,
+        "content_hash": "9f67f43ab649bb4ee52718b004a3d508",
+        "file_size": 4204
+      },
+      {
+        "timestamp": "2025-08-17T18:01:19.442758",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T18:01:19.447953",
+        "operation": "read",
+        "success": true,
+        "content_hash": "9f67f43ab649bb4ee52718b004a3d508",
+        "file_size": 4204
+      }
+    ],
+    "last_accessed": "2025-08-17T18:01:19.447953",
+    "file_type": ".py",
+    "content_hashes": [
+      "52faa92e29d42c2d6b684ed762258020",
+      "52faa92e29d42c2d6b684ed762258020",
+      "52faa92e29d42c2d6b684ed762258020",
+      "52faa92e29d42c2d6b684ed762258020",
+      "52faa92e29d42c2d6b684ed762258020",
+      "52faa92e29d42c2d6b684ed762258020",
+      "4f425392fe8aa86fcb76347d7409dbe5",
+      "8e44f95d0a5191fd70fa9a566afc4f92",
+      "4690552fb2967edc1f36a06c3cc753c0",
+      "dfcf24df08aff16ef68e0fc48f84c30f",
+      "9f67f43ab649bb4ee52718b004a3d508",
+      "9f67f43ab649bb4ee52718b004a3d508",
+      "9f67f43ab649bb4ee52718b004a3d508"
+    ]
+  },
+  "llm_integration.py": {
+    "access_count": 12,
+    "operations": [
+      {
+        "timestamp": "2025-08-17T13:53:19.287661",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T13:53:19.288669",
+        "operation": "read",
+        "success": true,
+        "content_hash": "ebc59feb14b87c92582923e4263f401b",
+        "file_size": 5827
+      },
+      {
+        "timestamp": "2025-08-17T13:56:30.016055",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T13:56:30.019755",
+        "operation": "read",
+        "success": true,
+        "content_hash": "ebc59feb14b87c92582923e4263f401b",
+        "file_size": 5827
+      },
+      {
+        "timestamp": "2025-08-17T14:16:51.033935",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T14:16:51.038190",
+        "operation": "read",
+        "success": true,
+        "content_hash": "f9b7fcf7077fb688b48168e52e9ecbbb",
+        "file_size": 7148
+      },
+      {
+        "timestamp": "2025-08-17T16:44:22.447814",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T16:44:22.449093",
+        "operation": "read",
+        "success": true,
+        "content_hash": "0caf426d3dbfaa518eb5adac40afe653",
+        "file_size": 8388
+      },
+      {
+        "timestamp": "2025-08-17T18:01:12.245171",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T18:01:12.247798",
+        "operation": "read",
+        "success": true,
+        "content_hash": "f6366e37cf908d4cb02a2b26f2e4b494",
+        "file_size": 12064
+      },
+      {
+        "timestamp": "2025-08-17T18:01:17.830099",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T18:01:17.831387",
+        "operation": "read",
+        "success": true,
+        "content_hash": "f6366e37cf908d4cb02a2b26f2e4b494",
+        "file_size": 12064
+      }
+    ],
+    "last_accessed": "2025-08-17T18:01:17.831387",
+    "file_type": ".py",
+    "content_hashes": [
+      "ebc59feb14b87c92582923e4263f401b",
+      "ebc59feb14b87c92582923e4263f401b",
+      "f9b7fcf7077fb688b48168e52e9ecbbb",
+      "0caf426d3dbfaa518eb5adac40afe653",
+      "f6366e37cf908d4cb02a2b26f2e4b494",
+      "f6366e37cf908d4cb02a2b26f2e4b494"
+    ]
+  },
+  "agent.py": {
+    "access_count": 8,
+    "operations": [
+      {
+        "timestamp": "2025-08-17T14:02:40.197970",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T14:02:40.200383",
+        "operation": "read",
+        "success": true,
+        "content_hash": "2fd4d8c3c4fc72317dbef08ce874e72f",
+        "file_size": 12935
+      },
+      {
+        "timestamp": "2025-08-17T14:16:52.568671",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T14:16:52.572661",
+        "operation": "read",
+        "success": true,
+        "content_hash": "8da9c6f8e22978a986760178cdf5c762",
+        "file_size": 13115
+      },
+      {
+        "timestamp": "2025-08-17T18:01:13.492993",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T18:01:13.495084",
+        "operation": "read",
+        "success": true,
+        "content_hash": "50ae77961a71788df3bc096890c55421",
+        "file_size": 13437
+      },
+      {
+        "timestamp": "2025-08-17T18:01:16.370810",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T18:01:16.374134",
+        "operation": "read",
+        "success": true,
+        "content_hash": "50ae77961a71788df3bc096890c55421",
+        "file_size": 13437
+      }
+    ],
+    "last_accessed": "2025-08-17T18:01:16.374134",
+    "file_type": ".py",
+    "content_hashes": [
+      "2fd4d8c3c4fc72317dbef08ce874e72f",
+      "8da9c6f8e22978a986760178cdf5c762",
+      "50ae77961a71788df3bc096890c55421",
+      "50ae77961a71788df3bc096890c55421"
+    ]
+  },
+  "tools.py": {
+    "access_count": 2,
+    "operations": [
+      {
+        "timestamp": "2025-08-17T15:50:10.310374",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T15:50:10.312475",
+        "operation": "read",
+        "success": true,
+        "content_hash": "192e8ad394502301bff5df654c794ad6",
+        "file_size": 27102
+      }
+    ],
+    "last_accessed": "2025-08-17T15:50:10.312475",
+    "file_type": ".py",
+    "content_hashes": [
+      "192e8ad394502301bff5df654c794ad6"
+    ]
+  },
+  "hello.py": {
+    "access_count": 3,
+    "operations": [
+      {
+        "timestamp": "2025-08-17T15:56:14.509318",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T15:56:35.071033",
+        "operation": "clear_file_content",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T15:56:53.056600",
+        "operation": "delete_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      }
+    ],
+    "last_accessed": "2025-08-17T15:56:53.056600",
+    "file_type": ".py",
+    "content_hashes": []
+  },
+  "sample.py": {
+    "access_count": 44,
+    "operations": [
+      {
+        "timestamp": "2025-08-17T16:10:36.141091",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T16:10:46.626261",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T16:10:46.627573",
+        "operation": "read",
+        "success": true,
+        "content_hash": "1e6f93b02bd6ca9c1a2468ce363fcd58",
+        "file_size": 321
+      },
+      {
+        "timestamp": "2025-08-17T16:11:11.292283",
+        "operation": "clear_file_content",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T16:11:34.215562",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T16:11:41.850024",
+        "operation": "clear_file_content",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T16:11:52.152347",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T16:29:50.751026",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T16:30:16.917411",
+        "operation": "apply_code_change",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T16:32:35.401327",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T16:32:35.405315",
+        "operation": "read",
+        "success": true,
+        "content_hash": "d9a6693fe47f696293ad4e8202d64397",
+        "file_size": 99
+      },
+      {
+        "timestamp": "2025-08-17T17:15:03.652936",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T17:15:44.617709",
+        "operation": "delete_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T17:48:04.125041",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T17:48:28.933759",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T17:48:28.935800",
+        "operation": "read",
+        "success": true,
+        "content_hash": "4666bc8b137d26219aabcb0fa31c15df",
+        "file_size": 329
+      },
+      {
+        "timestamp": "2025-08-18T12:24:49.702594",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-18T12:25:35.618954",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-18T12:25:35.625440",
+        "operation": "read",
+        "success": true,
+        "content_hash": "d1322e84bfe48e819f97f675df66b603",
+        "file_size": 270
+      },
+      {
+        "timestamp": "2025-08-18T12:27:19.546707",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-18T12:27:19.558275",
+        "operation": "read",
+        "success": true,
+        "content_hash": "67efc140551dbb23d32dcf320cb832d3",
+        "file_size": 271
+      },
+      {
+        "timestamp": "2025-08-18T12:31:58.886580",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-18T12:31:58.902442",
+        "operation": "read",
+        "success": true,
+        "content_hash": "67efc140551dbb23d32dcf320cb832d3",
+        "file_size": 271
+      },
+      {
+        "timestamp": "2025-08-18T12:33:48.365816",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-18T12:33:48.369834",
+        "operation": "read",
+        "success": true,
+        "content_hash": "67efc140551dbb23d32dcf320cb832d3",
+        "file_size": 271
+      },
+      {
+        "timestamp": "2025-08-18T12:36:34.861682",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-18T12:36:34.861682",
+        "operation": "read",
+        "success": true,
+        "content_hash": "754238709ae2f2349181185902c34f6f",
+        "file_size": 257
+      },
+      {
+        "timestamp": "2025-08-18T12:40:06.309386",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-18T12:40:06.314168",
+        "operation": "read",
+        "success": true,
+        "content_hash": "67efc140551dbb23d32dcf320cb832d3",
+        "file_size": 271
+      },
+      {
+        "timestamp": "2025-08-18T12:54:19.304696",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-18T12:54:19.304696",
+        "operation": "read",
+        "success": true,
+        "content_hash": "67efc140551dbb23d32dcf320cb832d3",
+        "file_size": 271
+      },
+      {
+        "timestamp": "2025-08-18T13:01:54.785820",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-18T13:01:54.790035",
+        "operation": "read",
+        "success": true,
+        "content_hash": "67efc140551dbb23d32dcf320cb832d3",
+        "file_size": 271
+      },
+      {
+        "timestamp": "2025-08-18T13:02:09.174075",
+        "operation": "apply_code_change",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-18T14:45:51.347190",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-18T14:45:51.349331",
+        "operation": "read",
+        "success": true,
+        "content_hash": "fe31b03acd64874c300fc54073a7c7f2",
+        "file_size": 272
+      },
+      {
+        "timestamp": "2025-08-19T10:15:10.929620",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-19T10:15:40.734278",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-19T10:15:40.736347",
+        "operation": "read",
+        "success": true,
+        "content_hash": "1860346c9330f2187216194b1d833143",
+        "file_size": 523
+      },
+      {
+        "timestamp": "2025-08-29T12:50:08.363798",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-29T12:50:26.099354",
+        "operation": "clear_file_content",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-29T12:51:42.772743",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-29T12:52:25.030156",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-29T12:52:25.033291",
+        "operation": "read",
+        "success": true,
+        "content_hash": "251d36505afc8150c0ca5d5ceade5129",
+        "file_size": 438
+      }
+    ],
+    "last_accessed": "2025-08-29T12:52:25.033291",
+    "file_type": ".py",
+    "content_hashes": [
+      "1e6f93b02bd6ca9c1a2468ce363fcd58",
+      "d9a6693fe47f696293ad4e8202d64397",
+      "4666bc8b137d26219aabcb0fa31c15df",
+      "d1322e84bfe48e819f97f675df66b603",
+      "67efc140551dbb23d32dcf320cb832d3",
+      "67efc140551dbb23d32dcf320cb832d3",
+      "67efc140551dbb23d32dcf320cb832d3",
+      "754238709ae2f2349181185902c34f6f",
+      "67efc140551dbb23d32dcf320cb832d3",
+      "67efc140551dbb23d32dcf320cb832d3",
+      "67efc140551dbb23d32dcf320cb832d3",
+      "fe31b03acd64874c300fc54073a7c7f2",
+      "1860346c9330f2187216194b1d833143",
+      "251d36505afc8150c0ca5d5ceade5129"
+    ]
+  },
+  "README.md": {
+    "access_count": 12,
+    "operations": [
+      {
+        "timestamp": "2025-08-17T16:23:52.280790",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T16:25:22.091207",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T16:25:22.093457",
+        "operation": "read",
+        "success": true,
+        "content_hash": "6914abc68b1ebbcefd0323740672d2be",
+        "file_size": 567
+      },
+      {
+        "timestamp": "2025-08-17T16:27:12.636477",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T16:27:12.638591",
+        "operation": "read",
+        "success": true,
+        "content_hash": "6914abc68b1ebbcefd0323740672d2be",
+        "file_size": 567
+      },
+      {
+        "timestamp": "2025-08-17T16:28:10.824740",
+        "operation": "delete_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T16:32:36.769851",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T16:32:36.773144",
+        "operation": "read",
+        "success": true,
+        "content_hash": "6914abc68b1ebbcefd0323740672d2be",
+        "file_size": 567
+      },
+      {
+        "timestamp": "2025-08-17T16:44:18.235490",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T16:45:00.248822",
+        "operation": "apply_code_change",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T18:01:09.983214",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T18:01:09.984254",
+        "operation": "read",
+        "success": true,
+        "content_hash": "419d88e7489a54e39be1ca75a89d943f",
+        "file_size": 1752
+      }
+    ],
+    "last_accessed": "2025-08-17T18:01:09.984254",
+    "file_type": ".md",
+    "content_hashes": [
+      "6914abc68b1ebbcefd0323740672d2be",
+      "6914abc68b1ebbcefd0323740672d2be",
+      "6914abc68b1ebbcefd0323740672d2be",
+      "419d88e7489a54e39be1ca75a89d943f"
+    ]
+  },
+  "sample.txt": {
+    "access_count": 1,
+    "operations": [
+      {
+        "timestamp": "2025-08-17T17:36:18.969533",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      }
+    ],
+    "last_accessed": "2025-08-17T17:36:18.969533",
+    "file_type": ".txt",
+    "content_hashes": []
+  },
+  "requirements.txt": {
+    "access_count": 8,
+    "operations": [
+      {
+        "timestamp": "2025-08-17T17:48:30.212130",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T17:48:30.216126",
+        "operation": "read",
+        "success": true,
+        "content_hash": "5373cdc6395ebea83663b1b63a885422",
+        "file_size": 39
+      },
+      {
+        "timestamp": "2025-08-17T17:52:06.016962",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T17:52:06.019441",
+        "operation": "read",
+        "success": true,
+        "content_hash": "5373cdc6395ebea83663b1b63a885422",
+        "file_size": 39
+      },
+      {
+        "timestamp": "2025-08-18T12:17:55.738110",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-18T12:17:55.742137",
+        "operation": "read",
+        "success": true,
+        "content_hash": "5373cdc6395ebea83663b1b63a885422",
+        "file_size": 39
+      },
+      {
+        "timestamp": "2025-08-18T12:31:57.459264",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-18T12:31:57.461278",
+        "operation": "read",
+        "success": true,
+        "content_hash": "5373cdc6395ebea83663b1b63a885422",
+        "file_size": 39
+      }
+    ],
+    "last_accessed": "2025-08-18T12:31:57.461278",
+    "file_type": ".txt",
+    "content_hashes": [
+      "5373cdc6395ebea83663b1b63a885422",
+      "5373cdc6395ebea83663b1b63a885422",
+      "5373cdc6395ebea83663b1b63a885422",
+      "5373cdc6395ebea83663b1b63a885422"
+    ]
+  },
+  "test.py": {
+    "access_count": 7,
+    "operations": [
+      {
+        "timestamp": "2025-08-17T17:49:45.745518",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T18:03:04.759671",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-18T12:52:40.683610",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-18T12:52:41.776273",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-18T12:52:41.778283",
+        "operation": "read",
+        "success": true,
+        "content_hash": "e7f6c6e01bc6f032899905cf99b76c4e",
+        "file_size": 508
+      },
+      {
+        "timestamp": "2025-08-30T10:49:25.747316",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-30T10:49:40.358747",
+        "operation": "clear_file_content",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      }
+    ],
+    "last_accessed": "2025-08-30T10:49:40.358747",
+    "file_type": ".py",
+    "content_hashes": [
+      "e7f6c6e01bc6f032899905cf99b76c4e"
+    ]
+  },
+  "action_history.py": {
+    "access_count": 2,
+    "operations": [
+      {
+        "timestamp": "2025-08-17T17:57:51.673134",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-17T17:57:51.675341",
+        "operation": "read",
+        "success": true,
+        "content_hash": "d71fe7dade49c70f6ba1293f4e689c5e",
+        "file_size": 1012
+      }
+    ],
+    "last_accessed": "2025-08-17T17:57:51.675341",
+    "file_type": ".py",
+    "content_hashes": [
+      "d71fe7dade49c70f6ba1293f4e689c5e"
+    ]
+  },
+  "majority_element.py": {
+    "access_count": 4,
+    "operations": [
+      {
+        "timestamp": "2025-08-18T12:53:41.572302",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-18T12:53:42.678401",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-18T12:53:42.685149",
+        "operation": "read",
+        "success": true,
+        "content_hash": "2736e8d52763ca2b3e05ceab372a6bbe",
+        "file_size": 643
+      },
+      {
+        "timestamp": "2025-08-18T15:32:42.311802",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      }
+    ],
+    "last_accessed": "2025-08-18T15:32:42.311802",
+    "file_type": ".py",
+    "content_hashes": [
+      "2736e8d52763ca2b3e05ceab372a6bbe"
+    ]
+  },
+  "armstrong_checker.py": {
+    "access_count": 4,
+    "operations": [
+      {
+        "timestamp": "2025-08-18T14:50:26.373341",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-18T14:50:28.842334",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-18T14:50:28.846352",
+        "operation": "read",
+        "success": true,
+        "content_hash": "37cc5a0c8b97a108e503f3eaf25534b7",
+        "file_size": 377
+      },
+      {
+        "timestamp": "2025-08-18T14:53:07.916316",
+        "operation": "delete_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      }
+    ],
+    "last_accessed": "2025-08-18T14:53:07.916316",
+    "file_type": ".py",
+    "content_hashes": [
+      "37cc5a0c8b97a108e503f3eaf25534b7"
+    ]
+  },
+  "average_calculator.py": {
+    "access_count": 8,
+    "operations": [
+      {
+        "timestamp": "2025-08-18T14:53:42.717974",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-18T14:53:43.925445",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-18T14:53:43.928445",
+        "operation": "read",
+        "success": true,
+        "content_hash": "af36b14581d0ff3a0ff618116c80f418",
+        "file_size": 278
+      },
+      {
+        "timestamp": "2025-08-18T15:02:01.489730",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-18T15:02:02.555613",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-18T15:02:02.555613",
+        "operation": "read",
+        "success": true,
+        "content_hash": "94658299de447814b95f51b2499ccd62",
+        "file_size": 378
+      },
+      {
+        "timestamp": "2025-08-18T15:03:26.553345",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-18T15:03:26.553345",
+        "operation": "read",
+        "success": true,
+        "content_hash": "94658299de447814b95f51b2499ccd62",
+        "file_size": 378
+      }
+    ],
+    "last_accessed": "2025-08-18T15:03:26.553345",
+    "file_type": ".py",
+    "content_hashes": [
+      "af36b14581d0ff3a0ff618116c80f418",
+      "94658299de447814b95f51b2499ccd62",
+      "94658299de447814b95f51b2499ccd62"
+    ]
+  },
+  "wrong_function_count.txt": {
+    "access_count": 1,
+    "operations": [
+      {
+        "timestamp": "2025-08-18T14:56:55.099925",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      }
+    ],
+    "last_accessed": "2025-08-18T14:56:55.099925",
+    "file_type": ".txt",
+    "content_hashes": []
+  },
+  "count_substrings.py": {
+    "access_count": 13,
+    "operations": [
+      {
+        "timestamp": "2025-08-18T15:11:34.681852",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-18T15:11:57.475937",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-18T15:11:57.479495",
+        "operation": "read",
+        "success": true,
+        "content_hash": "d5ea3011cd1eff593449270af87603ca",
+        "file_size": 376
+      },
+      {
+        "timestamp": "2025-08-18T15:12:18.362022",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-18T15:12:18.364031",
+        "operation": "read",
+        "success": true,
+        "content_hash": "d5ea3011cd1eff593449270af87603ca",
+        "file_size": 376
+      },
+      {
+        "timestamp": "2025-08-18T15:17:56.593009",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-18T15:17:56.600529",
+        "operation": "read",
+        "success": true,
+        "content_hash": "d5ea3011cd1eff593449270af87603ca",
+        "file_size": 376
+      },
+      {
+        "timestamp": "2025-08-18T15:26:50.898846",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-18T15:26:50.914920",
+        "operation": "read",
+        "success": true,
+        "content_hash": "d5ea3011cd1eff593449270af87603ca",
+        "file_size": 376
+      },
+      {
+        "timestamp": "2025-08-18T15:28:38.336264",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-18T15:28:38.340493",
+        "operation": "read",
+        "success": true,
+        "content_hash": "d5ea3011cd1eff593449270af87603ca",
+        "file_size": 376
+      },
+      {
+        "timestamp": "2025-08-18T15:31:19.304966",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-18T15:31:19.321074",
+        "operation": "read",
+        "success": true,
+        "content_hash": "d5ea3011cd1eff593449270af87603ca",
+        "file_size": 376
+      }
+    ],
+    "last_accessed": "2025-08-18T15:31:19.321074",
+    "file_type": ".py",
+    "content_hashes": [
+      "d5ea3011cd1eff593449270af87603ca",
+      "d5ea3011cd1eff593449270af87603ca",
+      "d5ea3011cd1eff593449270af87603ca",
+      "d5ea3011cd1eff593449270af87603ca",
+      "d5ea3011cd1eff593449270af87603ca",
+      "d5ea3011cd1eff593449270af87603ca"
+    ]
+  },
+  "<same filepath>": {
+    "access_count": 1,
+    "operations": [
+      {
+        "timestamp": "2025-08-18T15:26:54.775524",
+        "operation": "write_file",
+        "success": false,
+        "content_hash": null,
+        "file_size": null
+      }
+    ],
+    "last_accessed": "2025-08-18T15:26:54.775524",
+    "file_type": "unknown",
+    "content_hashes": []
+  },
+  "the file": {
+    "access_count": 4,
+    "operations": [
+      {
+        "timestamp": "2025-08-18T15:28:42.283219",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-18T15:31:26.724845",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-19T10:15:48.114810",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-19T10:16:35.047270",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      }
+    ],
+    "last_accessed": "2025-08-19T10:16:35.047270",
+    "file_type": "unknown",
+    "content_hashes": []
+  },
+  "palindrome_check.py": {
+    "access_count": 3,
+    "operations": [
+      {
+        "timestamp": "2025-08-19T10:16:14.667826",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-19T10:16:28.728004",
+        "operation": "read_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      },
+      {
+        "timestamp": "2025-08-19T10:16:28.730996",
+        "operation": "read",
+        "success": true,
+        "content_hash": "31857294aba8edeb97b02a7f59503996",
+        "file_size": 275
+      }
+    ],
+    "last_accessed": "2025-08-19T10:16:28.730996",
+    "file_type": ".py",
+    "content_hashes": [
+      "31857294aba8edeb97b02a7f59503996"
+    ]
+  },
+  "odd_even_checker.py": {
+    "access_count": 1,
+    "operations": [
+      {
+        "timestamp": "2025-09-06T19:29:49.627506",
+        "operation": "write_file",
+        "success": true,
+        "content_hash": null,
+        "file_size": null
+      }
+    ],
+    "last_accessed": "2025-09-06T19:29:49.627506",
+    "file_type": ".py",
+    "content_hashes": []
+  }
+}

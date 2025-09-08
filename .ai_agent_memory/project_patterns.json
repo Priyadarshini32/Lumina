@@ -1,0 +1,44 @@
+{
+  "file_modification": [
+    {
+      "timestamp": "2025-08-16T23:48:31.073911",
+      "pattern_data": {
+        "file_type": ".py",
+        "operation": "write",
+        "lines_changed": 1
+      },
+      "filepath": "test_file.py",
+      "context": {},
+      "occurrence_count": 1
+    }
+  ],
+  "test_pattern": [
+    {
+      "timestamp": "2025-08-16T23:48:31.163256",
+      "pattern_data": {
+        "type": "test"
+      },
+      "filepath": "test_persistent.py",
+      "context": {},
+      "occurrence_count": 1
+    }
+  ],
+  "file_modification_pattern": [
+    {
+      "timestamp": "2025-08-17T15:55:34.566763",
+      "pattern_data": {
+        "file_type": ".py",
+        "change_count": 1,
+        "change_types": {
+          "unknown": 1
+        }
+      },
+      "filepath": "main.py",
+      "context": {
+        "session_id": "session_1755426283_21152012"
+      },
+      "occurrence_count": 35,
+      "last_seen": "2025-08-30T10:49:40.374346"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "test_fix": [
+    {
+      "timestamp": "2025-08-16T23:48:31.076549",
+      "pattern_data": {
+        "error_type": "syntax_error",
+        "fix_method": "add_missing_colon"
+      },
+      "success_rate": 0.9,
+      "context": {
+        "file_type": ".py"
+      },
+      "usage_count": 1
+    }
+  ]
+}
