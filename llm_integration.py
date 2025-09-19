@@ -36,6 +36,31 @@ class LLMIntegration:
         except Exception as e:
             return f"**Agent Feedback:** Unable to generate feedback due to error: {str(e)} **Rating:** N/A"
 
+    def suggest_python_fix(self, original_code: str, lint_errors: str) -> str:
+        prompt = f"""
+Return ONLY the corrected Python code for the snippet below. Do not include any explanations, comments, markdown, or backticks. If the code is already correct, return the exact same code.
+
+Original code:
+<<<PYTHON
+{original_code}
+PYTHON
+>>>
+
+Lint errors:
+{lint_errors}
+"""
+        try:
+            resp = self.model.generate_content(prompt)
+            suggestion = (resp.text or "").strip()
+            # Remove fences if model added them anyway
+            if suggestion.startswith("```"):
+                suggestion = suggestion.strip('`')
+                if suggestion.startswith("python\n"):
+                    suggestion = suggestion[len("python\n"):]
+            return suggestion.strip()
+        except Exception as e:
+            return ""
+
     def generate_plan(self, conversation_history, available_tools_schema, memory_context=None):
         tools_str = json.dumps(available_tools_schema)
 

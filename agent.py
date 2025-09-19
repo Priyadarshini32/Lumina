@@ -91,7 +91,7 @@ class Agent:
                 tool_calls = response_json["tool_calls"]
             elif "text" in response_json:
                 agent_response_content = response_json['text']
-                self.terminal_interface.display_message(agent_response_content)
+                self.terminal_interface.display_message(agent_response_content, title="Agent Response")
                 self.conversation_history.append({"role": "model", "content": agent_response_content})
                 return {"status": "success", "message": agent_response_content, "type": "text_response"}
             else:
@@ -115,7 +115,13 @@ class Agent:
             
             # Handle approval for destructive actions
             if function_name in ["write_file", "delete_file", "clear_file_content", "apply_code_change", "edit_file", "edit_notebook", "run_terminal_cmd"]:
-                action_description = f"The agent wants to execute '{function_name}' on '{tool_args.get('filepath', '') or tool_args.get('target_file', '')}'. Args: {tool_args}"
+                display_args = dict(tool_args) # Create a copy to modify for display
+                if function_name == "write_file":
+                    display_args.pop('content', None)
+                elif function_name == "edit_file":
+                    display_args.pop('code_edit', None)
+                
+                action_description = f"The agent wants to execute '{function_name}' on '{tool_args.get('filepath', '') or tool_args.get('target_file', '')}'. Args: {display_args}"
                 preview_content = None
                 language = None
 
