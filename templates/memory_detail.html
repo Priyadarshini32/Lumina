@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Details - Conversation ID: {{ conversation.id }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --background-light: #f8f9fa;
+            --background-dark: #e9ecef;
+            --card-background: #ffffff;
+            --text-dark: #212529;
+            --text-light: #495057;
+            --border-color: #dee2e6;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.2em;
+            font-weight: 700;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-left: 20px;
+            margin-top: 15px;
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 500;
+            padding: 8px 15px;
+            border: 1px solid var(--primary-color);
+            border-radius: 5px;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        .back-link:hover {
+            background-color: var(--primary-color);
+            color: #fff;
+        }
+
+        .content-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .panel {
+            background-color: var(--card-background);
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            padding: 25px;
+            margin-bottom: 25px;
+        }
+
+        .panel h2 {
+            color: var(--primary-color);
+            margin-top: 0;
+            border-bottom: 2px solid var(--background-dark);
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+            font-size: 1.6em;
+            font-weight: 600;
+        }
+
+        .memory-section-title {
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+            font-size: 1.2em;
+        }
+
+        .memory-detail-item {
+            margin-left: 20px;
+            margin-bottom: 8px;
+            color: var(--text-light);
+            font-size: 0.95em;
+        }
+
+        .memory-detail-item strong {
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+
+        pre {
+            background-color: var(--background-dark);
+            border: 1px solid var(--border-color);
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
+            font-size: 0.9em;
+        }
+
+        .sub-section {
+            margin-left: 20px;
+            border-left: 2px solid var(--background-dark);
+            padding-left: 15px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Memory Details</h1>
+    </div>
+    <a href="/" class="back-link">&#8592; Back to Dashboard</a>
+
+    <div class="content-container">
+        <div class="panel">
+            <h2>Conversation ID: {{ conversation.id }}</h2>
+            <p><strong>Timestamp:</strong> {{ conversation.timestamp | format_timestamp }}</p>
+            <p><strong>User Input:</strong> {{ conversation.user_input }}</p>
+            <p><strong>Agent Response:</strong> {{ conversation.agent_response }}</p>
+
+            {% if conversation.tools_used %}
+                <div class="memory-section-title">Tools Used:</div>
+                <ul>
+                    {% for tool in conversation.tools_used %}
+                        <li>{{ tool }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+
+            {% if conversation.memory_summary %}
+                <div class="memory-section-title">Memory Snapshot:</div>
+                {% set memory = conversation.memory_summary %}
+                
+                {% if memory.last_sync %}
+                    <div class="memory-detail-item"><strong>Last Sync:</strong> {{ memory.last_sync | format_timestamp }}</div>
+                {% endif %}
+
+                {% if memory.persistent %}
+                    <div class="memory-section-title sub-section">Persistent Memory:</div>
+                    {% if memory.persistent.code_snippets %}
+                        <div class="memory-detail-item" style="margin-left: 40px;"><strong>Code Snippets:</strong> Total - {{ memory.persistent.code_snippets.total_snippets }}</div>
+                    {% endif %}
+                    {% if memory.persistent.file_access_history %}
+                        <div class="memory-detail-item" style="margin-left: 40px;"><strong>File Access History:</strong> Total accesses - {{ memory.persistent.file_access_history.total_accesses }}, Total files - {{ memory.persistent.file_access_history.total_files }}</div>
+                    {% endif %}
+                    {% if memory.persistent.project_patterns %}
+                        <div class="memory-detail-item" style="margin-left: 40px;"><strong>Project Patterns:</strong> Total - {{ memory.persistent.project_patterns.total_patterns }}, Types - {{ memory.persistent.project_patterns.pattern_types | join(', ') }}</div>
+                    {% endif %}
+                    {% if memory.persistent.success_patterns %}
+                        <div class="memory-detail-item" style="margin-left: 40px;"><strong>Success Patterns:</strong> Total - {{ memory.persistent.success_patterns.total_patterns }}, Types - {{ memory.persistent.success_patterns.pattern_types | join(', ') }}</div>
+                    {% endif %}
+                    {% if memory.persistent.tool_effectiveness %}
+                        <div class="memory-detail-item" style="margin-left: 40px;"><strong>Tool Effectiveness:</strong> Total tools - {{ memory.persistent.tool_effectiveness.total_tools }}</div>
+                        {% if memory.persistent.tool_effectiveness.tools %}
+                            <div class="memory-detail-item" style="margin-left: 60px;"><em>Tools:</em> {{ memory.persistent.tool_effectiveness.tools | join(', ') }}</div>
+                        {% endif %}
+                    {% endif %}
+                    {% if memory.persistent.user_preferences %}
+                        <div class="memory-detail-item" style="margin-left: 40px;"><strong>User Preferences:</strong> Total - {{ memory.persistent.user_preferences.total_preferences }}, Types - {{ memory.persistent.user_preferences.preference_types | join(', ') }}</div>
+                    {% endif %}
+                {% endif %}
+
+                {% if memory.session %}
+                    <div class="memory-section-title sub-section">Session Memory:</div>
+                    {% if memory.session.active_files %}
+                        <div class="memory-detail-item" style="margin-left: 40px;"><strong>Active Files:</strong> {{ memory.session.active_files | join(', ') }}</div>
+                    {% endif %}
+                    {% if memory.session.cached_files %}
+                        <div class="memory-detail-item" style="margin-left: 40px;"><strong>Cached Files:</strong> {{ memory.session.cached_files }}</div>
+                    {% endif %}
+                    {% if memory.session.current_directory %}
+                        <div class="memory-detail-item" style="margin-left: 40px;"><strong>Current Directory:</strong> {{ memory.session.current_directory }}</div>
+                    {% endif %}
+                    {% if memory.session.files_with_errors %}
+                        <div class="memory-detail-item" style="margin-left: 40px;"><strong>Files with Errors:</strong> {{ memory.session.files_with_errors | join(', ') }}</div>
+                    {% endif %}
+                    {% if memory.session.recent_commands %}
+                        <div class="memory-detail-item" style="margin-left: 40px;"><strong>Recent Commands:</strong> {{ memory.session.recent_commands }}</div>
+                    {% endif %}
+                    {% if memory.session.session_duration %}
+                        <div class="memory-detail-item" style="margin-left: 40px;"><strong>Session Duration:</strong> {{ "%.2f" | format(memory.session.session_duration) }} seconds</div>
+                    {% endif %}
+                    {% if memory.session.total_changes %}
+                        <div class="memory-detail-item" style="margin-left: 40px;"><strong>Total Changes:</strong> {{ memory.session.total_changes }}</div>
+                    {% endif %}
+                    {% if memory.session.session_id %}
+                        <div class="memory-detail-item" style="margin-left: 40px;"><strong>Session ID:</strong> {{ memory.session.session_id }}</div>
+                    {% endif %}
+                {% endif %}
+
+            {% else %}
+                <p>No memory summary available for this conversation.</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

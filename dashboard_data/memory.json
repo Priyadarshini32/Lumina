@@ -1,0 +1,64 @@
+{
+  "session": {
+    "session_duration": 9.791020154953003,
+    "cached_files": 1,
+    "active_files": [
+      "README.md"
+    ],
+    "total_changes": 1,
+    "recent_commands": 0,
+    "files_with_errors": [],
+    "current_directory": "C:\\Users\\priya\\OneDrive\\Desktop\\RESUME\\UPCOMING\\NXT WAVE\\Lumina"
+  },
+  "persistent": {
+    "project_patterns": {
+      "total_patterns": 3,
+      "pattern_types": [
+        "file_modification",
+        "test_pattern",
+        "file_modification_pattern"
+      ]
+    },
+    "user_preferences": {
+      "total_preferences": 1,
+      "preference_types": [
+        "coding_style"
+      ]
+    },
+    "success_patterns": {
+      "total_patterns": 1,
+      "pattern_types": [
+        "test_fix"
+      ]
+    },
+    "tool_effectiveness": {
+      "total_tools": 15,
+      "tools": [
+        "read_file",
+        "write_file",
+        "run_command",
+        "get_memory_status",
+        "list_directory_contents",
+        "search_memory_patterns",
+        "unknown",
+        "search_files",
+        "clear_file_content",
+        "delete_file",
+        "undo_last_action",
+        "run_git_command",
+        "run_linter",
+        "apply_code_change",
+        "run_tests"
+      ]
+    },
+    "file_access_history": {
+      "total_files": 26,
+      "total_accesses": 195
+    },
+    "code_snippets": {
+      "total_snippets": 1
+    }
+  },
+  "session_id": "session_1760432946_2a7923e9",
+  "last_sync": 1760432946.8651843
+}

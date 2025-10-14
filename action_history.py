@@ -5,8 +5,10 @@ class ActionHistory:
     def record_action(self, action_type, details):
         """
         Records an action in the history.
-        :param action_type: A string representing the type of action (e.g., 'write_file', 'delete_file').
-        :param details: A dictionary containing details necessary to undo the action.
+        :param action_type: A string representing the type of action (e.g.,
+            'write_file', 'delete_file').
+        :param details: A dictionary containing details necessary to
+            undo the action.
         """
         self.history.append({'type': action_type, 'details': details})
 
@@ -27,3 +29,7 @@ class ActionHistory:
         if self.history:
             return self.history.pop()
         return None
+
+    def get_history(self):
+        """Retrieves the entire action history."""
+        return self.history

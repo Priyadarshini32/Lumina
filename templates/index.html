@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --background-light: #f8f9fa;
+            --background-dark: #e9ecef;
+            --card-background: #ffffff;
+            --text-dark: #212529;
+            --text-light: #495057;
+            --border-color: #dee2e6;
+            --success-light: #d4edda;
+            --success-dark: #28a745;
+            --date-button-bg: #e2e6ea;
+            --date-button-hover-bg: #dae0e5;
+            --date-button-active-bg: var(--primary-color);
+            --date-button-active-color: #fff;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .panel {
+            background-color: var(--card-background);
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            padding: 25px;
+            transition: transform 0.2s ease-in-out;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .panel:hover {
+            transform: translateY(-5px);
+        }
+
+        .panel h2 {
+            color: var(--primary-color);
+            margin-top: 0;
+            border-bottom: 2px solid var(--background-dark);
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+            font-size: 1.6em;
+            font-weight: 600;
+        }
+
+        .panel-content {
+            flex-grow: 1;
+            overflow-y: auto;
+            max-height: 400px; /* Limit height for scrollability */
+        }
+
+        .conversation-item,
+        .memory-item,
+        .insight-item,
+        .file-item,
+        .tool-usage-item {
+            border-bottom: 1px dashed var(--border-color);
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+        }
+
+        .conversation-item:last-child,
+        .memory-item:last-child,
+        .insight-item:last-child,
+        .file-item:last-child,
+        .tool-usage-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .conversation-item strong,
+        .insight-item strong,
+        .file-item strong,
+        .tool-usage-item strong {
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        .tool-list {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+        }
+
+        .tool-list li {
+            background-color: var(--success-light);
+            border: 1px solid var(--success-dark);
+            color: var(--success-dark);
+            padding: 5px 12px;
+            border-radius: 5px;
+            margin-bottom: 8px;
+            font-size: 0.85em;
+            display: inline-block;
+            margin-right: 8px;
+        }
+
+        .memory-item {
+            cursor: pointer;
+            padding: 10px;
+            transition: background-color 0.2s, box-shadow 0.2s;
+            border-radius: 5px;
+            background-color: var(--background-light);
+            margin-bottom: 10px;
+        }
+
+        .memory-item:hover {
+            background-color: var(--background-dark);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .memory-item span {
+            color: var(--text-light);
+            font-size: 0.9em;
+        }
+
+        .date-navigation {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .date-button {
+            background-color: var(--date-button-bg);
+            color: var(--text-dark);
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background-color 0.2s, color 0.2s;
+            text-decoration: none; /* Ensure buttons don't look like text links */
+        }
+
+        .date-button:hover {
+            background-color: var(--date-button-hover-bg);
+        }
+
+        /* Remove active state from date button as it will navigate to a new page */
+        /* .date-button.active { 
+            background-color: var(--date-button-active-bg);
+            color: var(--date-button-active-color);
+        } */
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .panel {
+                min-width: unset;
+                max-width: unset;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>AI Agent Dashboard</h1>
+    </div>
+
+    <div class="container">
+        <div class="panel">
+            <h2>Conversation History</h2>
+            <div id="date-navigation" class="date-navigation"></div>
+            <div id="history" class="panel-content">
+                <p>Select a date to view conversations.</p>
+            </div>
+        </div>
+
+        <div class="panel">
+            <h2>Memory Snapshots</h2>
+            <div id="memory-list" class="panel-content"></div>
+        </div>
+
+        <div class="panel">
+            <h2>Agent Insights</h2>
+            <div id="insights" class="panel-content">
+                <p>Loading insights...</p>
+            </div>
+        </div>
+
+        <div class="panel">
+            <h2>Recent Files Accessed</h2>
+            <div id="recent-files" class="panel-content">
+                <p>No recent files.</p>
+            </div>
+        </div>
+
+        <div class="panel">
+            <h2>Most Used Tools</h2>
+            <div id="most-used-tools" class="panel-content">
+                <p>No tool usage data.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let allConversations = []; 
+        let allMemorySnapshots = []; 
+
+        async function fetchData() {
+            // Fetch History (only needed for unique dates for navigation)
+            const historyResponse = await fetch('/api/history');
+            allConversations = await historyResponse.json(); 
+            
+            // Group conversations by date and render date navigation
+            renderDateNavigation(allConversations);
+            
+            // Fetch Memory Snapshots
+            const memoryResponse = await fetch('/api/memory');
+            allMemorySnapshots = await memoryResponse.json(); 
+            const memoryListDiv = document.getElementById('memory-list');
+            memoryListDiv.innerHTML = ''; 
+
+            if (allMemorySnapshots.length === 0) {
+                memoryListDiv.textContent = "No memory snapshots available.";
+            } else {
+                allMemorySnapshots.forEach(mem => {
+                    const memoryItem = document.createElement('div');
+                    memoryItem.className = 'memory-item';
+                    memoryItem.innerHTML = `<strong>Conversation ID:</strong> ${mem.conversation_id} <span>(Timestamp: ${new Date(mem.timestamp).toLocaleString()})</span>`;
+                    memoryItem.dataset.conversationId = mem.conversation_id; 
+                    memoryItem.addEventListener('click', () => showMemoryDetails(mem.conversation_id));
+                    memoryListDiv.appendChild(memoryItem);
+                });
+            }
+
+            // Fetch Insights
+            const insightsResponse = await fetch('/api/insights');
+            const insights = await insightsResponse.json();
+            
+            // Display insight summary (non-graphical part)
+            const insightsDiv = document.getElementById('insights');
+            insightsDiv.innerHTML = formatInsights(insights);
+
+            // Display Recent Files Accessed and Most Used Tools List
+            displayRecentFiles(insights);
+            displayMostUsedTools(insights);
+        }
+
+        function renderDateNavigation(conversations) {
+            const dateNavigationDiv = document.getElementById('date-navigation');
+            dateNavigationDiv.innerHTML = ''; 
+
+            const uniqueDates = new Set();
+            conversations.forEach(conv => {
+                const date = new Date(conv.timestamp).toISOString().split('T')[0];
+                uniqueDates.add(date);
+            });
+
+            const sortedDates = Array.from(uniqueDates).sort((a, b) => new Date(b) - new Date(a));
+
+            sortedDates.forEach(date => {
+                const button = document.createElement('a'); // Change to anchor tag
+                button.className = 'date-button';
+                button.textContent = new Date(date).toLocaleDateString(); 
+                button.href = `/history/${date}`; // Link to the new daily history page
+                dateNavigationDiv.appendChild(button);
+            });
+        }
+
+        // The old displayConversationsForDate is no longer needed as we navigate to a new page
+        /*
+        function displayConversationsForDate(selectedDate, clickedButton = null) {
+            // ... old implementation ...
+        }
+        */
+
+        function formatInsights(insights) {
+            let html = '';
+            html += `<div class="insight-item"><strong>Total Conversations:</strong> ${insights.total_conversations}</div>`;
+            html += `<div class="insight-item"><strong>Total Tools Executed:</strong> ${insights.total_tools_executed}</div>`;
+            html += `<div class="insight-item"><strong>Unique Files Accessed:</strong> ${insights.unique_files_accessed}</div>`;
+            html += `<div class="insight-item"><strong>Total Changes Made:</strong> ${insights.total_changes_made}</div>`;
+            return html;
+        }
+
+        function displayRecentFiles(insights) {
+            const recentFilesDiv = document.getElementById('recent-files');
+            recentFilesDiv.innerHTML = '';
+            
+            if (insights.unique_files_accessed > 0 && allMemorySnapshots.length > 0) {
+                const latestMemory = allMemorySnapshots[allMemorySnapshots.length - 1].memory_summary;
+                const activeFiles = latestMemory.session.active_files || [];
+                if (activeFiles.length > 0) {
+                    const ul = document.createElement('ul');
+                    activeFiles.forEach(file => {
+                        const li = document.createElement('li');
+                        li.className = 'file-item';
+                        li.textContent = file.split(/[\\/]/).pop(); 
+                        ul.appendChild(li);
+                    });
+                    recentFilesDiv.appendChild(ul);
+                } else {
+                    recentFilesDiv.innerHTML = '<p>No active files in the latest session memory.</p>';
+                }
+            } else {
+                recentFilesDiv.innerHTML = '<p>No recent files accessed.</p>';
+            }
+        }
+
+        function displayMostUsedTools(insights) {
+            const mostUsedToolsDiv = document.getElementById('most-used-tools');
+            mostUsedToolsDiv.innerHTML = '';
+
+            const mostUsedTools = insights.most_used_tools || [];
+
+            if (mostUsedTools.length === 0) {
+                mostUsedToolsDiv.innerHTML = '<p>No tool usage data.</p>';
+                return;
+            }
+
+            const ul = document.createElement('ul');
+            mostUsedTools.forEach(tool => {
+                const li = document.createElement('li');
+                li.className = 'tool-usage-item';
+                li.textContent = `${tool.tool} (${tool.count} uses)`;
+                ul.appendChild(li);
+            });
+            mostUsedToolsDiv.appendChild(ul);
+        }
+
+        function showMemoryDetails(conversationId) {
+            window.location.href = `/memory/${conversationId}`;
+        }
+
+        fetchData();
+        setInterval(fetchData, 3000); 
+    </script>
+</body>
+</html>

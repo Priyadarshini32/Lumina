@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversation History - Date: {{ selected_date }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --background-light: #f8f9fa;
+            --background-dark: #e9ecef;
+            --card-background: #ffffff;
+            --text-dark: #212529;
+            --text-light: #495057;
+            --border-color: #dee2e6;
+            --success-light: #d4edda;
+            --success-dark: #28a745;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.2em;
+            font-weight: 700;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-left: 20px;
+            margin-top: 15px;
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 500;
+            padding: 8px 15px;
+            border: 1px solid var(--primary-color);
+            border-radius: 5px;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        .back-link:hover {
+            background-color: var(--primary-color);
+            color: #fff;
+        }
+
+        .content-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .panel {
+            background-color: var(--card-background);
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            padding: 25px;
+            margin-bottom: 25px;
+        }
+
+        .panel h2 {
+            color: var(--primary-color);
+            margin-top: 0;
+            border-bottom: 2px solid var(--background-dark);
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+            font-size: 1.6em;
+            font-weight: 600;
+        }
+
+        .conversation-item {
+            border-bottom: 1px dashed var(--border-color);
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+        }
+
+        .conversation-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .conversation-item strong {
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        .tool-list {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+        }
+
+        .tool-list li {
+            background-color: var(--success-light);
+            border: 1px solid var(--success-dark);
+            color: var(--success-dark);
+            padding: 5px 12px;
+            border-radius: 5px;
+            margin-bottom: 8px;
+            font-size: 0.85em;
+            display: inline-block;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Conversation History for {{ selected_date | format_date_display }}</h1>
+    </div>
+    <a href="/" class="back-link">&#8592; Back to Dashboard</a>
+
+    <div class="content-container">
+        <div class="panel">
+            <h2>Conversations</h2>
+            {% if conversations %}
+                {% for conv in conversations %}
+                    <div class="conversation-item">
+                        <strong>ID:</strong> {{ conv.id }}<br>
+                        <strong>Time:</strong> {{ conv.timestamp | format_time_display }}<br>
+                        <strong>User:</strong> {{ conv.user_input }}<br>
+                        <strong>Agent:</strong> {{ conv.agent_response or 'No direct response' }}<br>
+
+                        {% if conv.tools_used and conv.tools_used.length > 0 %}
+                            <strong>Tools Used:</strong>
+                            <ul class="tool-list">
+                                {% for tool in conv.tools_used %}
+                                    <li>{{ tool }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>No conversations found for this date.</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

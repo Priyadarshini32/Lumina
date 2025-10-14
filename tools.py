@@ -599,6 +599,7 @@ class ToolExecutionSystem:
         result = apply_code_change(filepath, old_code, new_code)
         if result['status'] == 'success':
             self.action_history.record_action('apply_code_change', {'filepath': filepath, 'old_code': old_code, 'new_code': new_code})
+            return {"status": "success", "message": f"Code change applied to {filepath}."}
         return result
 
     def execute_tool_from_dict(self, tool_call_dict):
